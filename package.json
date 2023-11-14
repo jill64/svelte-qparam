@@ -36,7 +36,12 @@
   "publishConfig": {
     "access": "public"
   },
-  "keywords": [],
+  "keywords": [
+    "querystring",
+    "svelte",
+    "sveltekit",
+    "typesafe"
+  ],
   "scripts": {
     "dev": "vite dev",
     "build": "vite build && npm run package",
