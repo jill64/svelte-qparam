@@ -47,7 +47,7 @@ By passing a conversion function as the second argument, you can obtain a value 
   // https://example.com/?num=123
   $: num = qparam('num', {
     stringify: (value) => value.toString(),
-    parse: (str) => parseInt(str),
+    parse: (str) => parseInt(str)
   })
 
   // output 123
