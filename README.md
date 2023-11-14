@@ -1,2 +1,2 @@
-# svelte-qparam
-🔎 typed-qparam wrapper for SvelteKit Application
+<!----- BEGIN GHOST DOCS HEADER ----->
+<!----- END GHOST DOCS HEADER ----->
