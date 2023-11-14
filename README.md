@@ -1,4 +1,17 @@
 <!----- BEGIN GHOST DOCS HEADER ----->
+
+# svelte-qparam
+
+[![ci.yml](https://github.com/jill64/svelte-qparam/actions/workflows/ci.yml/badge.svg)](https://github.com/jill64/svelte-qparam/actions/workflows/ci.yml) [![codecov-coverage](https://codecov.io/gh/jill64/svelte-qparam/graph/badge.svg)](https://codecov.io/gh/jill64/svelte-qparam)
+
+🔎 Type-Safe Query Parameter for SvelteKit
+
+## Installation
+
+```sh
+npm i svelte-qparam
+```
+
 <!----- END GHOST DOCS HEADER ----->
 
 ## Single Parameter
