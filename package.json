@@ -36,7 +36,12 @@
   "publishConfig": {
     "access": "public"
   },
-  "keywords": [],
+  "keywords": [
+    "querystring",
+    "svelte",
+    "sveltekit",
+    "typesafe"
+  ],
   "scripts": {
     "dev": "vite dev",
     "build": "vite build && npm run package",
@@ -54,7 +59,6 @@
     "@sveltejs/kit": "^1.0.0"
   },
   "devDependencies": {
-    "@jill64/sentry-sveltekit-cloudflare": "1.0.0",
     "@playwright/test": "1.39.0",
     "@sveltejs/adapter-auto": "2.1.1",
     "@sveltejs/kit": "1.27.6",
