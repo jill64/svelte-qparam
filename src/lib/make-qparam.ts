@@ -1,31 +1,25 @@
 import { goto } from '$app/navigation'
-import { string } from '$lib/converter/string'
-import type { Qparam, QparamConverter } from '$lib/types'
+import type { Qparam } from '$lib/types'
 import type { QparamOptions } from '$lib/types/QparamOptions'
 import { readable } from 'svelte/store'
+import { extract } from 'typed-qparam'
+import { string, type Serde } from 'typed-qparam/serde'
 
-type MakeQparam = {
-  <T>(
-    key: string,
-    converter: QparamConverter<T>,
-    options?: QparamOptions
-  ): Qparam<T>
+export const make_qparam = (
+  url: URL
+): {
+  <T>(key: string, serde: Serde<T>, options?: QparamOptions): Qparam<T>
   (key: string): Qparam<string>
-}
+} => {
+  const qparam = extract(url)
 
-export const make_qparam =
-  (url: URL): MakeQparam =>
-  <T>(key: string, converter?: QparamConverter<T>, options?: QparamOptions) => {
-    const { parse, stringify } = (converter ?? string) as QparamConverter<T>
+  return <T>(key: string, serde?: Serde<T>, options?: QparamOptions) => {
+    const param = qparam(key, (serde ?? string) as Serde<T>)
 
-    const { subscribe } = readable(parse(url.searchParams.get(key)))
+    const { subscribe } = readable(param.get())
 
     const set = (value: T) => {
-      const dist = new URL(url)
-      const val = stringify(value)
-
-      dist.searchParams.set(key, val)
-
+      const dist = param.set(value)
       return options?.goto
         ? options.goto(dist)
         : goto(dist, {
@@ -40,3 +34,4 @@ export const make_qparam =
       set
     }
   }
+}

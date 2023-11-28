@@ -1,5 +1,5 @@
 import { define } from '$lib'
-import { boolean, number, string } from '$lib/converter'
+import { boolean, number, string } from '$lib/serde'
 
 export const _extract = define({
   str: string,

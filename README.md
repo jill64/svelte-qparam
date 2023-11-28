@@ -44,7 +44,7 @@ By passing a conversion function as the second argument, you can obtain a value 
 ```svelte
 <script>
   import { qparam } from 'svelte-qparam'
-  import { number } from 'svelte-qparam/converter'
+  import { number } from 'svelte-qparam/serde'
 
   // https://example.com/?num=123
   $: num = qparam('num', {
@@ -64,12 +64,12 @@ By passing a conversion function as the second argument, you can obtain a value 
 
 ### Prepared Converter
 
-You can also use the prepared converters in `svelte-qparam/converter`.
+You can also use the prepared converters in `svelte-qparam/serde`.
 
 ```svelte
 <script>
   import { qparam } from 'svelte-qparam'
-  import { number, boolean } from 'svelte-qparam/converter'
+  import { number, boolean } from 'svelte-qparam/serde'
 
   $: num = qparam('num', number)
   $: bool = qparam('bool', boolean)
@@ -87,7 +87,7 @@ Use the `define` function to set multiple parameter definitions at once.
 ```svelte
 <script>
   import { define } from 'svelte-qparam'
-  import { string, number, boolean } from 'svelte-qparam/converter'
+  import { string, number, boolean } from 'svelte-qparam/serde'
 
   const extract = define({
     str: string,
@@ -121,7 +121,7 @@ This allows you to handle parameters type-safely across applications across serv
 ```js
 // +page.js
 import { define } from 'svelte-qparam'
-import { string, number, boolean } from 'svelte-qparam/converter'
+import { string, number, boolean } from 'svelte-qparam/serde'
 
 export const _extract = define({
   str: string,
