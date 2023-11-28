@@ -1,8 +1,6 @@
 import { expect, test } from 'vitest'
-import { boolean } from './converter/boolean.js'
-import { number } from './converter/number.js'
-import { string } from './converter/string.js'
 import { define } from './define'
+import { boolean, number, string } from './serde/index.js'
 
 test('define', () => {
   const extract = define({

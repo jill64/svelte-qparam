@@ -1,7 +1,7 @@
 {
   "name": "svelte-qparam",
   "description": "🔎 Type-Safe Query Parameter for SvelteKit",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "dist/index.js",
   "type": "module",
   "license": "MIT",
@@ -16,9 +16,9 @@
     "!*.spec.*"
   ],
   "exports": {
-    "./converter": {
-      "types": "./dist/converter/index.d.ts",
-      "default": "./dist/converter/index.js"
+    "./serde": {
+      "types": "./dist/serde/index.d.ts",
+      "default": "./dist/serde/index.js"
     },
     "./types": {
       "types": "./dist/types/index.d.ts",
@@ -32,9 +32,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/svelte-qparam.git"
-  },
-  "publishConfig": {
-    "access": "public"
   },
   "keywords": [
     "querystring",
@@ -55,8 +52,8 @@
     "test:e2e": "playwright test"
   },
   "peerDependencies": {
-    "svelte": "^4.0.0",
-    "@sveltejs/kit": "^1.0.0"
+    "@sveltejs/kit": "^1.0.0",
+    "svelte": "^4.0.0"
   },
   "devDependencies": {
     "@playwright/test": "1.40.0",
@@ -72,5 +69,8 @@
     "typescript": "5.3.2",
     "vite": "5.0.2",
     "vitest": "0.34.6"
+  },
+  "dependencies": {
+    "typed-qparam": "2.0.0"
   }
 }
