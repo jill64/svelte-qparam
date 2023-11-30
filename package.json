@@ -71,6 +71,6 @@
     "vitest": "0.34.6"
   },
   "dependencies": {
-    "typed-qparam": "2.0.0"
+    "typed-qparam": "2.0.1"
   }
 }
