@@ -8,13 +8,13 @@
 
 ## [Demo](https://stackblitz.com/edit/svelte-qparam?file=src%2Froutes%2Fextract.js)
 
+<!----- END GHOST DOCS HEADER ----->
+
 ## Installation
 
 ```sh
 npm i svelte-qparam
 ```
-
-<!----- END GHOST DOCS HEADER ----->
 
 ## Single Parameter
 
@@ -30,7 +30,7 @@ Passing a query parameter key to the `qparam` function will retrieve the svelte-
   // output 'value'
   console.log($value)
 
-  // navigate to https://example.com/?key=new-value
+  // navigate to https://example.com/?key=value2
   $value = 'value2'
   // or
   value.set('value2')
@@ -69,16 +69,32 @@ You can also use the prepared converters in `svelte-qparam/serde`.
 ```svelte
 <script>
   import { qparam } from 'svelte-qparam'
-  import { number, boolean } from 'svelte-qparam/serde'
+  import { number, boolean, enums } from 'svelte-qparam/serde'
 
   $: num = qparam('num', number)
   $: bool = qparam('bool', boolean)
-  $: enum = qparam('enum', enum(
-    ['a', 'b', 'c'],
-    'a' // fallback default value
-  ))
+  $: enumerate = qparam(
+    'enumerate',
+    enums(
+      ['a', 'b', 'c'],
+      'a' // fallback default value
+    )
+  )
 </script>
 ```
+
+> [!TIP]
+> if error occurred when importing `svelte-qparam/serde`, try to change `moduleResolution` in `tsconfig.json` like below.
+>
+> ```json:tsconfig.json
+>   {
+>     // ...
+>     "compilerOptions": {
+>       // ...
+>       "moduleResolution": "Bundler"
+>     }
+>   }
+> ```
 
 ## Bulk Parameters
 
