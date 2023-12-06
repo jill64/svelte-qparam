@@ -23,8 +23,9 @@ export const define =
       const values = Object.fromEntries(
         entries.map(([key, serde]) => [key, param(key, serde).get()])
       ) as {
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        [K in keyof T]: T[K] extends ArrayedSerde<any>
+        [K in keyof T]: T[K] extends {
+          arrayed: true
+        }
           ? RSerde<T[K]>[]
           : RSerde<T[K]>
       }
@@ -34,8 +35,9 @@ export const define =
       const qparams = Object.fromEntries(
         entries.map(([key, serde]) => [key, qparam(key, serde, options)])
       ) as {
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        [K in keyof T]: T[K] extends ArrayedSerde<any>
+        [K in keyof T]: T[K] extends {
+          arrayed: true
+        }
           ? Qparam<RSerde<T[K]>[]>
           : Qparam<RSerde<T[K]>>
       }
