@@ -25,7 +25,7 @@ Passing a query parameter key to the `qparam` function will retrieve the svelte-
   import { qparam } from 'svelte-qparam'
 
   // https://example.com/?key=value
-  $: value = qparam('key')
+  $: value = $qparam('key')
 
   // output 'value'
   console.log($value)
@@ -47,7 +47,7 @@ By passing a conversion function as the second argument, you can obtain a value 
   import { number } from 'svelte-qparam/serde'
 
   // https://example.com/?num=123
-  $: num = qparam('num', {
+  $: num = $qparam('num', {
     stringify: (value) => value.toString(),
     parse: (str) => parseInt(str)
   })
@@ -71,9 +71,9 @@ You can also use the prepared converters in `svelte-qparam/serde`.
   import { qparam } from 'svelte-qparam'
   import { number, boolean, enums } from 'svelte-qparam/serde'
 
-  $: num = qparam('num', number)
-  $: bool = qparam('bool', boolean)
-  $: enumerate = qparam(
+  $: num = $qparam('num', number)
+  $: bool = $qparam('bool', boolean)
+  $: enumerate = $qparam(
     'enumerate',
     enums(
       ['a', 'b', 'c'],
@@ -129,7 +129,7 @@ Use the `define` function to set multiple parameter definitions at once.
 </script>
 ```
 
-### Cross-Cutting Type-Safety
+### Fullstack Type-Safety
 
 Values defined with the `define` function can be used in `+page.js` and `+page.server.js`.
 This allows you to handle parameters type-safely across applications across servers and clients.
