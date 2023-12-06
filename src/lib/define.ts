@@ -1,37 +1,43 @@
 import type { Qparam, QparamOptions } from '$lib/types'
+import { extract } from 'typed-qparam'
 import type { Serde } from 'typed-qparam/serde'
+import type { ArrayedSerde } from 'typed-qparam/types'
 import { make_qparam } from './make-qparam'
+
+type RSerde<T extends Serde<unknown>> = T extends Serde<infer R> ? R : never
 
 export const define =
   /* eslint-disable @typescript-eslint/no-explicit-any */
 
+  <T extends Record<string, Serde<any> | ArrayedSerde<any>>>(
+    /* eslint-enable @typescript-eslint/no-explicit-any */
 
-    <T extends Record<string, Serde<any>>>(
-      /* eslint-enable @typescript-eslint/no-explicit-any */
+    table: T,
+    options?: QparamOptions
+  ) => {
+    const entries = Object.entries(table)
 
-      table: T,
-      options?: QparamOptions
-    ) =>
-    (url: URL) => {
-      type Values = {
-        [K in keyof T]: ReturnType<T[K]['deserialize']>
-      }
-
-      const entries = Object.entries(table)
+    return (url: URL) => {
+      const param = extract(url)
 
       const values = Object.fromEntries(
-        entries.map(([key, { deserialize }]) => [
-          key,
-          deserialize(url.searchParams.get(key) ?? '')
-        ])
-      ) as Values
+        entries.map(([key, serde]) => [key, param(key, serde).get()])
+      ) as {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        [K in keyof T]: T[K] extends ArrayedSerde<any>
+          ? RSerde<T[K]>[]
+          : RSerde<T[K]>
+      }
 
       const qparam = make_qparam(url)
 
       const qparams = Object.fromEntries(
         entries.map(([key, serde]) => [key, qparam(key, serde, options)])
       ) as {
-        [K in keyof Values]: Qparam<Values[K]>
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        [K in keyof T]: T[K] extends ArrayedSerde<any>
+          ? Qparam<RSerde<T[K]>[]>
+          : Qparam<RSerde<T[K]>>
       }
 
       return {
@@ -39,3 +45,4 @@ export const define =
         qparams
       }
     }
+  }

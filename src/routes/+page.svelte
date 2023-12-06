@@ -5,7 +5,7 @@
   export let data
 
   $: ({ qparams, page_values, server_values } = data)
-  $: ({ str, bool, num } = qparams)
+  $: ({ str, bool_array, num } = qparams)
   $: ({ url } = $page)
 </script>
 
@@ -24,13 +24,13 @@
 <ul>
   <li>server_str: {server_values.str}</li>
   <li>server_num: {server_values.num}</li>
-  <li>server_bool: {server_values.bool}</li>
+  <li>server_bool_array: {JSON.stringify(server_values.bool_array)}</li>
   <li>page_str: {page_values.str}</li>
   <li>page_num: {page_values.num}</li>
-  <li>page_bool: {page_values.bool}</li>
+  <li>page_bool_array: {JSON.stringify(page_values.bool_array)}</li>
   <li>str: {$str}</li>
   <li>num: {$num}</li>
-  <li>bool: {$bool}</li>
+  <li>bool_array: {JSON.stringify($bool_array)}</li>
 </ul>
 
 <style>
