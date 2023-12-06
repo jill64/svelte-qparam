@@ -173,6 +173,7 @@ export const load = ({ url }) => {
 ```
 
 ```svelte
+<!-- +page.svelte -->
 <script>
   export let data
 
