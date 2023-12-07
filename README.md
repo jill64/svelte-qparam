@@ -2,7 +2,7 @@
 
 # svelte-qparam
 
-[![npm-version](https://img.shields.io/npm/v/svelte-qparam)](https://npmjs.com/package/svelte-qparam) [![npm-license](https://img.shields.io/npm/l/svelte-qparam)](https://npmjs.com/package/svelte-qparam) [![npm-download-month](https://img.shields.io/npm/dm/svelte-qparam)](https://npmjs.com/package/svelte-qparam) [![npm-min-size](https://img.shields.io/bundlephobia/min/svelte-qparam)](https://npmjs.com/package/svelte-qparam) [![ci.yml](https://github.com/jill64/svelte-qparam/actions/workflows/ci.yml/badge.svg)](https://github.com/jill64/svelte-qparam/actions/workflows/ci.yml) [![codecov-coverage](https://codecov.io/gh/jill64/svelte-qparam/graph/badge.svg)](https://codecov.io/gh/jill64/svelte-qparam) [![stackblitz](https://img.shields.io/badge/StackBlitz-svelte--qparam-dodgerblue)](https://stackblitz.com/edit/svelte-qparam?file=src%2Froutes%2Fextract.js)
+[![npm-version](https://img.shields.io/npm/v/svelte-qparam)](https://npmjs.com/package/svelte-qparam) [![npm-license](https://img.shields.io/npm/l/svelte-qparam)](https://npmjs.com/package/svelte-qparam) [![npm-download-month](https://img.shields.io/npm/dm/svelte-qparam)](https://npmjs.com/package/svelte-qparam) [![npm-min-size](https://img.shields.io/bundlephobia/min/svelte-qparam)](https://npmjs.com/package/svelte-qparam) [![ci.yml](https://github.com/jill64/svelte-qparam/actions/workflows/ci.yml/badge.svg)](https://github.com/jill64/svelte-qparam/actions/workflows/ci.yml) [![stackblitz](https://img.shields.io/badge/StackBlitz-svelte--qparam-dodgerblue)](https://stackblitz.com/edit/svelte-qparam?file=src%2Froutes%2Fextract.js)
 
 🔎 Type-Safe Query Parameter for SvelteKit
 
