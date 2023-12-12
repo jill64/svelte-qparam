@@ -1,4 +1,4 @@
-import { array } from 'typed-qparam'
+import { array } from './index'
 import { expect, expectTypeOf, test } from 'vitest'
 import { define } from './define'
 import { boolean, json, number, string } from './serde/index.js'
