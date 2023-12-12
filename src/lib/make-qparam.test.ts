@@ -1,8 +1,8 @@
 import { expectTypeOf, test } from 'vitest'
+import { array } from './index'
 import { make_qparam } from './make-qparam'
+import { number } from './serde'
 import type { Qparam } from './types'
-import { array } from 'typed-qparam'
-import { number } from 'typed-qparam/serde'
 
 test('make-qparam', () => {
   const qparam = make_qparam(new URL('https://example.com/?key=val&n=1'))
