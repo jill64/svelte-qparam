@@ -5,7 +5,12 @@ import { vitePreprocess } from '@sveltejs/kit/vite'
 const config = {
   preprocess: vitePreprocess(),
   kit: {
-    adapter: adapter()
+    adapter: adapter(),
+    alias: {
+      'svelte-qparam/serde': './src/lib/serde/index.js',
+      'svelte-qparam': './src/lib/index.js',
+      'extract.js': './src/routes/extract.js'
+    }
   }
 }
 
