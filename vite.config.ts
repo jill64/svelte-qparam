@@ -5,5 +5,10 @@ export default defineConfig({
   plugins: [sveltekit()],
   test: {
     include: ['**/*.test.ts']
+  },
+  server: {
+    fs: {
+      allow: ['.']
+    }
   }
 })
