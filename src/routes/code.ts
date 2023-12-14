@@ -1,8 +1,8 @@
-<script lang="ts">
-  import { HighlightSvelte } from '@jill64/npm-demo-layout/highlight'
+export const code = /* html */ `
+<!-- +page.svelte -->
+<script>
   import { array, qparam } from 'svelte-qparam'
   import { boolean, number } from 'typed-qparam/serde'
-  import { code } from './code'
 
   $: str = $qparam('str')
   $: num = $qparam('num', number)
@@ -14,4 +14,4 @@
   <code>num = {$num}</code>
   <code>bool_array = {JSON.stringify($bool_array)}</code>
 </output>
-<HighlightSvelte {code} />
+`
