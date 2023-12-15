@@ -2,11 +2,11 @@
 
 # svelte-qparam
 
-<!----- BEGIN GHOST DOCS BADGES -----><a href="https://npmjs.com/package/svelte-qparam"><img src="https://img.shields.io/npm/v/svelte-qparam" alt="npm-version" /></a> <a href="https://npmjs.com/package/svelte-qparam"><img src="https://img.shields.io/npm/l/svelte-qparam" alt="npm-license" /></a> <a href="https://npmjs.com/package/svelte-qparam"><img src="https://img.shields.io/npm/dm/svelte-qparam" alt="npm-download-month" /></a> <a href="https://npmjs.com/package/svelte-qparam"><img src="https://img.shields.io/bundlephobia/min/svelte-qparam" alt="npm-min-size" /></a> <a href="https://github.com/jill64/svelte-qparam/actions/workflows/ci.yml"><img src="https://github.com/jill64/svelte-qparam/actions/workflows/ci.yml/badge.svg" alt="ci.yml" /></a><!----- END GHOST DOCS BADGES ----->
+<!----- BEGIN GHOST DOCS BADGES -----><a href="https://npmjs.com/package/svelte-qparam"><img src="https://img.shields.io/npm/v/svelte-qparam" alt="npm-version" /></a> <a href="https://npmjs.com/package/svelte-qparam"><img src="https://img.shields.io/npm/l/svelte-qparam" alt="npm-license" /></a> <a href="https://npmjs.com/package/svelte-qparam"><img src="https://img.shields.io/npm/dm/svelte-qparam" alt="npm-download-month" /></a> <a href="https://npmjs.com/package/svelte-qparam"><img src="https://img.shields.io/bundlephobia/min/svelte-qparam" alt="npm-min-size" /></a> <a href="https://github.com/jill64/svelte-qparam/actions/workflows/ci.yml"><img src="https://github.com/jill64/svelte-qparam/actions/workflows/ci.yml/badge.svg" alt="ci.yml" /></a> <a href="https://svelte-qparam.jill64.dev"><img src="https://img.shields.io/website?up_message=working&down_message=down&url=https%3A%2F%2Fsvelte-qparam.jill64.dev" alt="website" /></a><!----- END GHOST DOCS BADGES ----->
 
 🔎 Type-Safe Query Parameter for SvelteKit
 
-## [Demo](https://stackblitz.com/edit/svelte-qparam?file=src%2Froutes%2Fextract.js)
+## [Demo](https://svelte-qparam.jill64.dev)
 
 <!----- END GHOST DOCS HEADER ----->
 
