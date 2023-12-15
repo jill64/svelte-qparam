@@ -55,7 +55,7 @@
     "test:e2e": "playwright test"
   },
   "peerDependencies": {
-    "@sveltejs/kit": "^1.0.0",
+    "@sveltejs/kit": "^2.0.0",
     "svelte": "^4.0.0"
   },
   "prettier": "@jill64/prettier-config",
@@ -68,12 +68,13 @@
     "@jill64/sentry-sveltekit-cloudflare": "1.6.1",
     "@playwright/test": "1.40.1",
     "@sveltejs/adapter-cloudflare": "3.0.0",
-    "@sveltejs/kit": "1.30.3",
+    "@sveltejs/kit": "2.0.0",
     "svelte": "4.2.8",
-    "svelte-page-tab": "0.1.0",
+    "svelte-page-tab": "0.2.0",
     "typescript": "5.3.3",
     "vite": "5.0.9",
-    "vitest": "1.0.4"
+    "vitest": "1.0.4",
+    "@sveltejs/vite-plugin-svelte": "3.0.1"
   },
   "dependencies": {
     "typed-qparam": "2.1.2"
