@@ -183,3 +183,11 @@ export const load = ({ url }) => {
   // ...
 </script>
 ```
+
+<!----- BEGIN GHOST DOCS FOOTER ----->
+
+## License
+
+MIT
+
+<!----- END GHOST DOCS FOOTER ----->
