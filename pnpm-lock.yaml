@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   typed-qparam:
-    specifier: 2.1.4
-    version: 2.1.4
+    specifier: 2.1.5
+    version: 2.1.5
 
 devDependencies:
   '@jill64/eslint-config-svelte':
@@ -2694,8 +2694,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /typed-qparam@2.1.4:
-    resolution: {integrity: sha512-OvKGMKnWGnwvH0D4c7ZohUJtOO66MGPGVxFWv3iMUOwDR8Grcide1QoY8oLCHENLg00zT2GdznjTSWhqTD5FdA==}
+  /typed-qparam@2.1.5:
+    resolution: {integrity: sha512-8Zc/9qiTMYrhVKFkfIMGbsPH4djnrKXbKMxcAgJZhao75LXb3+s7gW24w5bgWRsH2WDc4dlC1mL0O4k1dZ7Zdg==}
     dependencies:
       ts-serde: 1.0.2
     dev: false
