@@ -26,8 +26,8 @@ devDependencies:
     specifier: 1.7.9
     version: 1.7.9(@sveltejs/kit@2.5.5)(svelte@4.2.12)
   '@jill64/universal-sanitizer':
-    specifier: 1.2.7
-    version: 1.2.7
+    specifier: 1.2.8
+    version: 1.2.8
   '@playwright/test':
     specifier: 1.43.0
     version: 1.43.0
@@ -996,15 +996,6 @@ packages:
     resolution: {integrity: sha512-1RLJ1H4Cn2Acjum8Fc0a9qgJhMqGtakpYYShWEF3LdUEo2dxgtoFEF6Tbwm4aRGASuV6KUMZlSdUZg3WEQ900Q==}
     dependencies:
       ts-serde: 1.0.3
-    dev: true
-
-  /@jill64/universal-sanitizer@1.2.7:
-    resolution: {integrity: sha512-eoNSVaZHIPDYVxsP96+EW/nB/Ekhn6rn9iuV2tm2lyXFbP0TGzB1Zr547LlCcWQ0mGisjwSg0PHdyrG+ptKq3Q==}
-    dependencies:
-      '@types/dompurify': 3.0.5
-      '@types/sanitize-html': 2.11.0
-      dompurify: 3.0.11
-      sanitize-html: 2.13.0
     dev: true
 
   /@jill64/universal-sanitizer@1.2.8:
@@ -1985,10 +1976,6 @@ packages:
     engines: {node: '>= 4'}
     dependencies:
       domelementtype: 2.3.0
-    dev: true
-
-  /dompurify@3.0.11:
-    resolution: {integrity: sha512-Fan4uMuyB26gFV3ovPoEoQbxRRPfTu3CvImyZnhGq5fsIEO+gEFLp45ISFt+kQBWsK5ulDdT0oV28jS1UrwQLg==}
     dev: true
 
   /dompurify@3.1.0:
