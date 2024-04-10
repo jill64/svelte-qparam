@@ -1,7 +1,7 @@
 {
   "name": "svelte-qparam",
   "description": "🔎 Type-Safe Query Parameter for SvelteKit",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "main": "dist/index.js",
   "type": "module",
   "license": "MIT",
@@ -77,6 +77,6 @@
     "@sveltejs/vite-plugin-svelte": "3.0.2"
   },
   "dependencies": {
-    "typed-qparam": "2.1.6"
+    "typed-qparam": "2.1.7"
   }
 }
