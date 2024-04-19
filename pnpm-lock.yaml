@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       typed-qparam:
-        specifier: 2.1.8
-        version: 2.1.8
+        specifier: 2.1.9
+        version: 2.1.9
     devDependencies:
       '@jill64/eslint-config-svelte':
         specifier: 1.2.20
@@ -993,6 +993,9 @@ packages:
   devalue@4.3.2:
     resolution: {integrity: sha512-KqFl6pOgOW+Y6wJgu80rHpo2/3H07vr8ntR9rkkFIRETewbf5GaYYcakYfiKz89K+sLsuPkQIZaXDMjUObZwWg==}
 
+  devalue@4.3.3:
+    resolution: {integrity: sha512-UH8EL6H2ifcY8TbD2QsxwCC/pr5xSwPvv85LrLXVihmHVC3T3YqTCIwnR5ak0yO1KYqlxrPVOA/JVZJYPy2ATg==}
+
   diff-sequences@29.6.3:
     resolution: {integrity: sha512-EjePK1srD3P08o2j4f0ExnylqRs5B9tJjcp9t1krH2qRi8CCdsYfwe9JgSLurFBWwq4uOlipzfk5fHNvwFKr8Q==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
@@ -1822,6 +1825,9 @@ packages:
   ts-serde@1.0.4:
     resolution: {integrity: sha512-dKDQS7gNile4Py/Us8CROs5bs5/oM0KCocma1vAETIsz+Xs/LHRobpbeyWZyNM/mfX3JyQqSfif/8yIfVfmNCQ==}
 
+  ts-serde@1.0.5:
+    resolution: {integrity: sha512-safa9hCNQAyoY6sHL9RRgIHA9VlpJSgDnLr7pjt50G3t+Y5gY70Fib5SZR2W4Eq5VVUpJHDJjDxR9tknzjm2HQ==}
+
   tslib@1.14.1:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
 
@@ -1846,8 +1852,8 @@ packages:
     resolution: {integrity: sha512-Ne+eE4r0/iWnpAxD852z3A+N0Bt5RN//NjJwRd2VFHEmrywxf5vsZlh4R6lixl6B+wz/8d+maTSAkN1FIkI3LQ==}
     engines: {node: '>=10'}
 
-  typed-qparam@2.1.8:
-    resolution: {integrity: sha512-FqeUuOJVWRzY4DzrARr0YQub1VJzhilyfbdU0sX5wIEvl1EbmOgWGlhB1LS3DZ0a/kcenQeTOe+H/TvFWwgZag==}
+  typed-qparam@2.1.9:
+    resolution: {integrity: sha512-CYlzDkrIsjE2R+e00E4in0GRZS8lAC3Xz1LKC6m88qs32vLhb4ggqIfaS7IuKQoEd5LmlA97PE64usJ2fAmXKg==}
 
   typescanner@0.5.3:
     resolution: {integrity: sha512-B7EGCU7UEvTlFUE/yciT8L1pkNRLhqCa4tatuOuC5cKRCbLelB24y/P9RLDtT1Qq5CyLPSf5h9yv7Ij5BMyWmA==}
@@ -2891,6 +2897,8 @@ snapshots:
 
   devalue@4.3.2: {}
 
+  devalue@4.3.3: {}
+
   diff-sequences@29.6.3: {}
 
   dir-glob@3.0.1:
@@ -3783,6 +3791,10 @@ snapshots:
     dependencies:
       devalue: 4.3.2
 
+  ts-serde@1.0.5:
+    dependencies:
+      devalue: 4.3.3
+
   tslib@1.14.1: {}
 
   tslib@2.6.2: {}
@@ -3800,9 +3812,9 @@ snapshots:
 
   type-fest@0.20.2: {}
 
-  typed-qparam@2.1.8:
+  typed-qparam@2.1.9:
     dependencies:
-      ts-serde: 1.0.4
+      ts-serde: 1.0.5
 
   typescanner@0.5.3: {}
 
