@@ -46,8 +46,8 @@ importers:
         specifier: 4.2.15
         version: 4.2.15
       svelte-page-tab:
-        specifier: 1.0.12
-        version: 1.0.12(@sveltejs/kit@2.5.7(@sveltejs/vite-plugin-svelte@3.1.0(svelte@4.2.15)(vite@5.2.10(@types/node@20.11.27)))(svelte@4.2.15)(vite@5.2.10(@types/node@20.11.27)))(svelte@4.2.15)
+        specifier: 1.0.13
+        version: 1.0.13(@sveltejs/kit@2.5.7(@sveltejs/vite-plugin-svelte@3.1.0(svelte@4.2.15)(vite@5.2.10(@types/node@20.11.27)))(svelte@4.2.15)(vite@5.2.10(@types/node@20.11.27)))(svelte@4.2.15)
       typescript:
         specifier: 5.4.5
         version: 5.4.5
@@ -1775,8 +1775,8 @@ packages:
       '@sveltejs/kit': ^2.0.0
       svelte: ^4.0.0
 
-  svelte-page-tab@1.0.12:
-    resolution: {integrity: sha512-W71bqNTi1u99LUtTGh7vsjDx94DtbTOET7g2SbsjPHbShxbm5/RawqpcwO2KgbhfGyY8EOxJ3rguJv4g/r6ttw==}
+  svelte-page-tab@1.0.13:
+    resolution: {integrity: sha512-HI1DxjFYh8+chIMf8i3RoHQpoZiZ0xMDRLpPm4+U5TfItuFgrZDdPE+HHAMXpzNmWOL2tSt3OxiJJZUahtB7GQ==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
       svelte: ^4.0.0
@@ -3740,7 +3740,7 @@ snapshots:
       '@sveltejs/kit': 2.5.7(@sveltejs/vite-plugin-svelte@3.1.0(svelte@4.2.15)(vite@5.2.10(@types/node@20.11.27)))(svelte@4.2.15)(vite@5.2.10(@types/node@20.11.27))
       svelte: 4.2.15
 
-  svelte-page-tab@1.0.12(@sveltejs/kit@2.5.7(@sveltejs/vite-plugin-svelte@3.1.0(svelte@4.2.15)(vite@5.2.10(@types/node@20.11.27)))(svelte@4.2.15)(vite@5.2.10(@types/node@20.11.27)))(svelte@4.2.15):
+  svelte-page-tab@1.0.13(@sveltejs/kit@2.5.7(@sveltejs/vite-plugin-svelte@3.1.0(svelte@4.2.15)(vite@5.2.10(@types/node@20.11.27)))(svelte@4.2.15)(vite@5.2.10(@types/node@20.11.27)))(svelte@4.2.15):
     dependencies:
       '@sveltejs/kit': 2.5.7(@sveltejs/vite-plugin-svelte@3.1.0(svelte@4.2.15)(vite@5.2.10(@types/node@20.11.27)))(svelte@4.2.15)(vite@5.2.10(@types/node@20.11.27))
       svelte: 4.2.15
