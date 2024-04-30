@@ -73,7 +73,7 @@
     "svelte-page-tab": "1.0.13",
     "typescript": "5.4.5",
     "vite": "5.2.10",
-    "vitest": "1.5.2",
+    "vitest": "1.5.3",
     "@sveltejs/vite-plugin-svelte": "3.1.0"
   },
   "dependencies": {
