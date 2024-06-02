@@ -1,7 +1,7 @@
 {
   "name": "svelte-qparam",
   "description": "🔎 Type-Safe Query Parameter for SvelteKit",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "main": "dist/index.js",
   "type": "module",
   "license": "MIT",
@@ -34,7 +34,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/svelte-qparam.git",
-    "image": "https://opengraph.githubassets.com/b79d1dbe6d979c9a75278efda2266ed15213543e056d5116588049df1bfc420f/jill64/svelte-qparam"
+    "image": "https://opengraph.githubassets.com/4a70d648a7e81b44459e7cab12b6d42d4695ae21dad286738337010c00b445ae/jill64/svelte-qparam"
   },
   "keywords": [
     "querystring",
@@ -60,7 +60,7 @@
   },
   "prettier": "@jill64/prettier-config",
   "devDependencies": {
-    "@jill64/npm-demo-layout": "1.0.205",
+    "@jill64/npm-demo-layout": "1.0.206",
     "@jill64/universal-sanitizer": "1.2.13",
     "@jill64/eslint-config-svelte": "1.2.29",
     "@jill64/playwright-config": "2.3.0",
