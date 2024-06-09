@@ -34,7 +34,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/svelte-qparam.git",
-    "image": "https://opengraph.githubassets.com/0971bd45d44eb56919fe18b69c5b7d0efe7c4e7065861d8bce387944ca5f1a18/jill64/svelte-qparam"
+    "image": "https://opengraph.githubassets.com/e926e02c3b131e9a8f1aee68dc9c3b71d8e4a55e5ee69c59023cef5193c5d5ac/jill64/svelte-qparam"
   },
   "keywords": [
     "querystring",
