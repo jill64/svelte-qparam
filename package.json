@@ -70,7 +70,7 @@
     "@sveltejs/adapter-cloudflare": "4.4.0",
     "@sveltejs/kit": "2.5.10",
     "svelte": "4.2.18",
-    "svelte-page-tab": "1.0.15",
+    "svelte-page-tab": "1.0.16",
     "typescript": "5.4.5",
     "vite": "5.2.13",
     "vitest": "1.6.0",
