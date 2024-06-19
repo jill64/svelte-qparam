@@ -34,7 +34,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/svelte-qparam.git",
-    "image": "https://opengraph.githubassets.com/6f423b109a84ed6d3b6b6fa12ba1d2ddd869eac314b2480f0248d56d15728307/jill64/svelte-qparam"
+    "image": "https://opengraph.githubassets.com/a9a31a47ca566841508551355a8539a8b03bc3b2ae3118db2933b1f0f5d0eb85/jill64/svelte-qparam"
   },
   "keywords": [
     "querystring",
@@ -60,7 +60,7 @@
   },
   "prettier": "@jill64/prettier-config",
   "devDependencies": {
-    "@jill64/npm-demo-layout": "1.0.212",
+    "@jill64/npm-demo-layout": "1.0.213",
     "@jill64/universal-sanitizer": "1.2.13",
     "@jill64/eslint-config-svelte": "1.2.37",
     "@jill64/playwright-config": "2.3.0",
