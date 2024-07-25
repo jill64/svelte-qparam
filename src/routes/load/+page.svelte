@@ -5,16 +5,15 @@
   import loadSource from './+page.ts?raw'
   import { code } from './code'
 
-  export let data
+  let { data } = $props()
 
-  $: ({ qparams } = data)
-  $: ({ str, num, bool_array } = qparams)
+  let qparams = $derived(data.qparams)
 </script>
 
 <output>
-  <code>load_str = {$str}</code>
-  <code>load_num = {$num}</code>
-  <code>load_bool_array = {JSON.stringify($bool_array)}</code>
+  <code>load_str = {qparams.str.value}</code>
+  <code>load_num = {qparams.num.value}</code>
+  <code>load_bool_array = {JSON.stringify(qparams.bool_array.value)}</code>
 </output>
 
 <div style:overflow-x="auto">

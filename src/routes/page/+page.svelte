@@ -6,14 +6,13 @@
   import { code } from './code'
   import extractSource from '../extract.ts?raw'
 
-  $: ({ qparams } = extract($page.url))
-  $: ({ str, num, bool_array } = qparams)
+  let qparams = $derived(extract($page.url).qparams)
 </script>
 
 <output>
-  <code>page_str = {$str}</code>
-  <code>page_num = {$num}</code>
-  <code>page_bool_array = {JSON.stringify($bool_array)}</code>
+  <code>page_str = {qparams.str.value}</code>
+  <code>page_num = {qparams.num.value}</code>
+  <code>page_bool_array = {JSON.stringify(qparams.bool_array.value)}</code>
 </output>
 
 <div style:overflow-x="auto">

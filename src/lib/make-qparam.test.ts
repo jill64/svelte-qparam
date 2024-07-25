@@ -1,6 +1,6 @@
 import { expectTypeOf, test } from 'vitest'
 import { array } from './index'
-import { make_qparam } from './make-qparam'
+import { make_qparam } from './make-qparam.svelte'
 import { number } from './serde'
 import type { Qparam } from './types'
 

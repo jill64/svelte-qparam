@@ -5,16 +5,15 @@
   import { code } from './code'
   import { serverSource } from './serverSource'
 
-  export let data
+  let { data } = $props()
 
-  $: ({ values } = data)
-  $: ({ str, num, bool_array } = values)
+  let values = $derived(data.values)
 </script>
 
 <output>
-  <code>server_str = {str}</code>
-  <code>server_num = {num}</code>
-  <code>server_bool_array = {JSON.stringify(bool_array)}</code>
+  <code>server_str = {values.str}</code>
+  <code>server_num = {values.num}</code>
+  <code>server_bool_array = {JSON.stringify(values.bool_array)}</code>
 </output>
 
 <div style:overflow-x="auto">

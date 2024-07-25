@@ -1,7 +1,6 @@
 import { goto } from '$app/navigation'
 import type { Qparam } from '$lib/types'
 import type { QparamOptions } from '$lib/types/QparamOptions'
-import { readable } from 'svelte/store'
 import { extract } from 'typed-qparam'
 import { string, type Serde } from 'typed-qparam/serde'
 import type { ArrayedSerde } from 'typed-qparam/types'
@@ -26,22 +25,21 @@ export const make_qparam = (
   ) => {
     const param = qparam(key, (serde ?? string) as Serde<T>)
 
-    const { subscribe } = readable(param.get())
-
-    const set = (value: T) => {
-      const dist = param.set(value)
-      return options?.goto
-        ? options.goto(dist)
-        : goto(dist, {
-            replaceState: true,
-            noScroll: true,
-            keepFocus: true
-          })
-    }
-
     return {
-      subscribe,
-      set
+      get value() {
+        return param.get()
+      },
+      set value(value: T) {
+        const dist = param.set(value)
+
+        options?.goto
+          ? options.goto(dist)
+          : goto(dist, {
+              replaceState: true,
+              noScroll: true,
+              keepFocus: true
+            })
+      }
     }
   }
 }

@@ -2,7 +2,7 @@ import type { Qparam, QparamOptions } from '$lib/types'
 import { extract } from 'typed-qparam'
 import type { Serde } from 'typed-qparam/serde'
 import type { ArrayedSerde } from 'typed-qparam/types'
-import { make_qparam } from './make-qparam'
+import { make_qparam } from './make-qparam.svelte'
 
 type RSerde<T extends Serde<unknown>> = T extends Serde<infer R> ? R : never
 

@@ -1,7 +1,7 @@
 {
   "name": "svelte-qparam",
   "description": "🔎 Type-Safe Query Parameter for SvelteKit",
-  "version": "1.0.30",
+  "version": "2.0.0-next.1",
   "main": "dist/index.js",
   "type": "module",
   "license": "MIT",
@@ -50,13 +50,13 @@
     "package": "svelte-kit sync && npx @sveltejs/package && npx publint",
     "check": "svelte-kit sync && npx svelte-check",
     "lint": "npm run check && npx eslint .",
-    "format": "npx @jill64/psx",
+    "format": "npx psvx",
     "test": "vitest",
     "test:e2e": "playwright test"
   },
   "peerDependencies": {
     "@sveltejs/kit": "^2.0.0",
-    "svelte": "^4.0.0"
+    "svelte": "^5.0.0"
   },
   "prettier": "@jill64/prettier-config",
   "devDependencies": {
@@ -69,7 +69,7 @@
     "@playwright/test": "1.45.1",
     "@sveltejs/adapter-cloudflare": "4.7.0",
     "@sveltejs/kit": "2.5.18",
-    "svelte": "4.2.18",
+    "svelte": "5.0.0-next.197",
     "svelte-page-tab": "1.0.19",
     "typescript": "5.5.4",
     "vite": "5.3.4",

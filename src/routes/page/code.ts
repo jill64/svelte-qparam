@@ -1,15 +1,15 @@
 export const code = /* html */ `
 <!-- +page.svelte -->
 <script>
+  import { page } from '$app/stores'
   import { extract } from 'extract.js'
 
-  $: ({ qparams } = extract($page.url))
-  $: ({ str, num, bool_array } = qparams)
+  let qparams = $derived(extract($page.url).qparams)
 </script>
 
 <output>
-  <code>page_str = {$str}</code>
-  <code>page_num = {$num}</code>
-  <code>page_bool_array = {JSON.stringify($bool_array)}</code>
+  <code>page_str = {qparams.str.value}</code>
+  <code>page_num = {qparams.num.value}</code>
+  <code>page_bool_array = {JSON.stringify(qparams.bool_array.value)}</code>
 </output>
 `

@@ -4,14 +4,14 @@
   import { boolean, number } from 'typed-qparam/serde'
   import { code } from './code'
 
-  $: str = $qparam('str')
-  $: num = $qparam('num', number)
-  $: bool_array = $qparam('bool_array', array(boolean))
+  let str = $qparam('str')
+  let num = $qparam('num', number)
+  let bool_array = $qparam('bool_array', array(boolean))
 </script>
 
 <output>
-  <code>str = {$str}</code>
-  <code>num = {$num}</code>
-  <code>bool_array = {JSON.stringify($bool_array)}</code>
+  <code>str = {str.value}</code>
+  <code>num = {num.value}</code>
+  <code>bool_array = {JSON.stringify(bool_array.value)}</code>
 </output>
 <HighlightSvelte {code} />
