@@ -12,9 +12,9 @@
   let qparams = $derived(extract($page.url).qparams)
 </script>
 
-<input bind:value={qparams.str.value} placeholder="value" />
+<input bind:value={qparams.str.value} placeholder="string" />
 <fieldset>
-  <Decimal bind:value={qparams.num.value} />
+  <Decimal bind:value={qparams.num.value} placeholder="number" />
 </fieldset>
 <CheckList
   value={Object.fromEntries(

@@ -8,7 +8,7 @@
   // eslint-disable-next-line
   // @ts-ignore
   let str = $derived($qparam('str'))
-  
+
   // eslint-disable-next-line
   // @ts-ignore
   let num = $derived($qparam('num', number))
@@ -18,9 +18,9 @@
   let bool_array = $derived($qparam('bool_array', array(boolean)))
 </script>
 
-<input bind:value={str.value} placeholder="value" />
+<input bind:value={str.value} placeholder="string" />
 <fieldset>
-  <Decimal bind:value={num.value} />
+  <Decimal bind:value={num.value} placeholder="number" />
 </fieldset>
 <CheckList
   value={Object.fromEntries(
