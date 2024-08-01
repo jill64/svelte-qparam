@@ -8,8 +8,10 @@
 </script>
 
 <Layout {packageJson} {README}>
-  <p>
-    {$page.url.href}
+  <p class="my-4">
+    {// eslint-disable-next-line
+    // @ts-ignore
+    $page.url.href}
   </p>
   <ul class="flex flex-wrap">
     <TabItems
@@ -19,12 +21,14 @@
           ['/page', 'Separated Schema'],
           ['/load', 'Use with +page.js'],
           ['/server', 'Use with +page.server.js']
+          // eslint-disable-next-line
+          // @ts-ignore
         ].map(([path, name]) => [path + $page.url.search, name])
       )}
     />
   </ul>
   <hr class="-mt-[1px] border-zinc-300 dark:border-zinc-700" />
-  <main>
+  <main class="flex flex-col gap-4 mt-4">
     <slot />
   </main>
 </Layout>

@@ -32,6 +32,7 @@ export const make_qparam = (
       set value(value: T) {
         const dist = param.set(value)
 
+        // eslint-disable-next-line
         options?.goto
           ? options.goto(dist)
           : goto(dist, {

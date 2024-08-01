@@ -5,3 +5,33 @@
 h1 {
   @apply text-4xl font-bold;
 }
+
+main {
+  input {
+    @apply border-b-zinc-500 dark:border-zinc-400 focus-under focus:border-black dark:focus:border-white;
+  }
+}
+
+fieldset {
+  @apply flex items-center gap-4;
+  input {
+    @apply border-b-zinc-500 dark:border-zinc-400 focus-under focus:border-black dark:focus:border-white;
+  }
+  button {
+    @apply size-8 border inline-flex items-center justify-center rounded-full;
+  }
+}
+output {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  font-size: large;
+  border-radius: 0.5rem;
+  background: lightgray;
+}
+
+.dark output {
+  background: rgb(4, 4, 41);
+}

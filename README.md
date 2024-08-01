@@ -29,15 +29,13 @@ Passing a query parameter key to the `qparam` function will retrieve the svelte-
   import { qparam } from 'svelte-qparam'
 
   // https://example.com/?key=value
-  $: value = $qparam('key')
+  let str = $derived($qparam('key'))
 
   // output 'value'
-  console.log($value)
+  console.log(str.value)
 
   // navigate to https://example.com/?key=value2
-  $value = 'value2'
-  // or
-  value.set('value2')
+  str.value = 'value2'
 </script>
 ```
 
@@ -51,18 +49,18 @@ By passing a conversion function as the second argument, you can obtain a value 
   import { number } from 'svelte-qparam/serde'
 
   // https://example.com/?num=123
-  $: num = $qparam('num', {
-    stringify: (value) => value.toString(),
-    parse: (str) => parseInt(str)
-  })
+  let num = $derived(
+    $qparam('num', {
+      stringify: (value) => value.toString(),
+      parse: (str) => parseInt(str)
+    })
+  )
 
   // output 123
-  $: console.log($num)
+  console.log(num.value)
 
   // navigate to https://example.com/?key=456
-  $value = 456
-  // or
-  value.set(456)
+  num.value = 456
 </script>
 ```
 
@@ -75,13 +73,15 @@ You can also use the prepared converters in `svelte-qparam/serde`.
   import { qparam } from 'svelte-qparam'
   import { number, boolean, enums } from 'svelte-qparam/serde'
 
-  $: num = $qparam('num', number)
-  $: bool = $qparam('bool', boolean)
-  $: enumerate = $qparam(
-    'enumerate',
-    enums(
-      ['a', 'b', 'c'],
-      'a' // fallback default value
+  let num = $derived($qparam('num', number))
+  let bool = $derived($qparam('bool', boolean))
+  let enumerate = $derived(
+    $qparam(
+      'enumerate',
+      enums(
+        ['a', 'b', 'c'],
+        'a' // fallback default value
+      )
     )
   )
 </script>
@@ -116,20 +116,24 @@ Use the `define` function to set multiple parameter definitions at once.
   })
 
   // https://example.com/?str=value&num=123&bool=false
-  $: ({ values, qparams } = extract($page.url))
-  $: ({ str, num, bool } = qparams)
+  let extracted = $derived(extract($page.url))
+  let qparams = $derived(extracted.qparams)
+  let values = $derived(extracted.values)
+  let str = $derived(qparams.str)
+  let num = $derived(qparams.num)
+  let bool = $derived(qparams.bool)
 
   // {
   //   str: 'value',
   //   num: 123,
   //   bool: false
   // }
-  $: console.log(values)
+  console.log(values)
 
   // output 'value'
-  $: console.log($str)
-  $num = 456
-  $bool.set(true)
+  $: console.log(str.value)
+  num.value = 456
+  bool.value = true
 </script>
 ```
 
@@ -179,11 +183,13 @@ export const load = ({ url }) => {
 ```svelte
 <!-- +page.svelte -->
 <script>
-  export let data
+  let { data } = $props()
 
-  $: ({ qparams } = data)
-  $: ({ str, num, bool } = qparams)
+  let qparams = $derived(data.qparams)
 
+  let str = $derived(qparams.str)
+  let num = $derived(qparams.num)
+  let bool = $derived(qparams.bool)
   // ...
 </script>
 ```
