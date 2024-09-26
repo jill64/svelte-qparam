@@ -77,6 +77,6 @@
     "@sveltejs/vite-plugin-svelte": "3.1.2"
   },
   "dependencies": {
-    "typed-qparam": "2.1.12"
+    "typed-qparam": "2.1.13"
   }
 }
