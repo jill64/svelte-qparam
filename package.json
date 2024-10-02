@@ -34,7 +34,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/jill64/svelte-qparam.git",
-    "image": "https://opengraph.githubassets.com/62257a170c7ead2f826640e692a66daee53621d058f8237df4023609a600b983/jill64/svelte-qparam"
+    "image": "https://opengraph.githubassets.com/bf93477bd6be3b614bd5928fbb517e9af85dc71d55b43b922f55730e53461b6f/jill64/svelte-qparam"
   },
   "keywords": [
     "querystring",
@@ -73,7 +73,7 @@
     "svelte-page-tab": "1.0.19",
     "typescript": "5.6.2",
     "vite": "5.4.8",
-    "vitest": "2.1.1",
+    "vitest": "2.1.2",
     "@sveltejs/vite-plugin-svelte": "3.1.2"
   },
   "dependencies": {
