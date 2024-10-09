@@ -68,7 +68,7 @@
     "@jill64/sentry-sveltekit-cloudflare": "1.7.16",
     "@playwright/test": "1.45.1",
     "@sveltejs/adapter-cloudflare": "4.7.2",
-    "@sveltejs/kit": "2.6.3",
+    "@sveltejs/kit": "2.6.4",
     "svelte": "4.2.19",
     "svelte-page-tab": "1.0.19",
     "typescript": "5.6.3",
