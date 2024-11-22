@@ -71,7 +71,7 @@
     "@sveltejs/kit": "2.6.4",
     "svelte": "5.2.7",
     "svelte-page-tab": "1.0.19",
-    "typescript": "5.6.3",
+    "typescript": "5.7.2",
     "vite": "5.4.11",
     "vitest": "2.1.2",
     "@sveltejs/vite-plugin-svelte": "3.1.2"
