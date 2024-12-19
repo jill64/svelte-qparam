@@ -67,7 +67,7 @@
     "@jill64/prettier-config": "1.0.0",
     "@jill64/sentry-sveltekit-cloudflare": "1.7.16",
     "@playwright/test": "1.45.1",
-    "@sveltejs/adapter-cloudflare": "4.8.0",
+    "@sveltejs/adapter-cloudflare": "4.9.0",
     "@sveltejs/kit": "2.8.3",
     "svelte": "5.2.8",
     "svelte-page-tab": "1.0.19",
