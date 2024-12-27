@@ -1,8 +1,7 @@
-import { array } from './index'
 import { expect, expectTypeOf, test } from 'vitest'
-import { define } from './define'
+import { define } from './define.svelte'
+import { array } from './index'
 import { boolean, json, number, string } from './serde/index.js'
-import type { Qparam } from './types'
 
 test('define', () => {
   const extract = define({
@@ -38,14 +37,12 @@ test('define', () => {
   expect(values.b).toEqual(false)
   expect(values.obj_array).toEqual([])
 
-  expectTypeOf(qparams.key).toEqualTypeOf<Qparam<string>>()
-  expectTypeOf(qparams.n).toEqualTypeOf<Qparam<number>>()
-  expectTypeOf(qparams.b).toEqualTypeOf<Qparam<boolean>>()
+  expectTypeOf(qparams.key).toEqualTypeOf<string>()
+  expectTypeOf(qparams.n).toEqualTypeOf<number>()
+  expectTypeOf(qparams.b).toEqualTypeOf<boolean>()
   expectTypeOf(qparams.obj_array).toEqualTypeOf<
-    Qparam<
-      {
-        key: string
-      }[]
-    >
+    {
+      key: string
+    }[]
   >()
 })

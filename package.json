@@ -66,15 +66,15 @@
     "@jill64/playwright-config": "2.4.2",
     "@jill64/prettier-config": "1.0.0",
     "@jill64/sentry-sveltekit-cloudflare": "2.0.1",
-    "@playwright/test": "1.45.1",
+    "@playwright/test": "1.49.1",
     "@sveltejs/adapter-cloudflare": "5.0.0",
-    "@sveltejs/kit": "2.8.3",
-    "svelte": "5.2.8",
+    "@sveltejs/kit": "2.15.1",
+    "svelte": "5.16.0",
     "svelte-page-tab": "1.0.19",
     "typescript": "5.7.2",
-    "vite": "5.4.11",
+    "vite": "6.0.6",
     "vitest": "2.1.2",
-    "@sveltejs/vite-plugin-svelte": "3.1.2"
+    "@sveltejs/vite-plugin-svelte": "5.0.3"
   },
   "dependencies": {
     "typed-qparam": "2.1.13"
