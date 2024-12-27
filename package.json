@@ -1,7 +1,7 @@
 {
   "name": "svelte-qparam",
   "description": "🔎 Type-Safe Query Parameter for SvelteKit",
-  "version": "1.0.37",
+  "version": "2.0.0",
   "main": "dist/index.js",
   "type": "module",
   "license": "MIT",
@@ -34,7 +34,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/svelte-qparam.git",
-    "image": "https://opengraph.githubassets.com/8cdfd0be9c0e61401f6d54fd2fc5054bb82dc458bc11e02a8eed1864579667f8/jill64/svelte-qparam"
+    "image": "https://opengraph.githubassets.com/be9d73124dedc2b19076fe81dde556ed35968b455d7c8ecd7e4b5be58bedfada/jill64/svelte-qparam"
   },
   "keywords": [
     "querystring",
@@ -66,15 +66,15 @@
     "@jill64/playwright-config": "2.4.2",
     "@jill64/prettier-config": "1.0.0",
     "@jill64/sentry-sveltekit-cloudflare": "2.0.1",
-    "@playwright/test": "1.45.1",
+    "@playwright/test": "1.49.1",
     "@sveltejs/adapter-cloudflare": "5.0.0",
-    "@sveltejs/kit": "2.8.3",
-    "svelte": "5.2.8",
+    "@sveltejs/kit": "2.15.1",
+    "svelte": "5.16.0",
     "svelte-page-tab": "1.0.19",
     "typescript": "5.7.2",
-    "vite": "5.4.11",
+    "vite": "6.0.6",
     "vitest": "2.1.2",
-    "@sveltejs/vite-plugin-svelte": "3.1.2"
+    "@sveltejs/vite-plugin-svelte": "5.0.3"
   },
   "dependencies": {
     "typed-qparam": "2.1.13"

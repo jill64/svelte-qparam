@@ -1,10 +1,10 @@
 export const code = /* html */ `
 <!-- +page.svelte -->
 <script>
-  export let data
+  let { data } = $props()
 
-  $: ({ values } = data)
-  $: ({ str, num, bool_array } = values)
+  let { values } = $derived(data)
+  let { str, num, bool_array } = $derived(values)
 </script>
 
 <output>

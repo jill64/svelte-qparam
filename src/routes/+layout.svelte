@@ -1,22 +1,20 @@
 <script lang="ts">
   import { goto } from '$app/navigation'
-  import { page } from '$app/stores'
+  import { page } from '$app/state'
   import { Layout } from '@jill64/npm-demo-layout'
   import { TabItems } from 'svelte-page-tab'
   import README from '../../README.md?raw'
   import packageJson from '../../package.json'
-
-  $: ({ url } = $page)
 </script>
 
 <Layout {packageJson} {README}>
   <p>
-    {url.origin}{url.pathname}?
+    {page.url.origin}{page.url.pathname}?
     <input
-      value={url.search.replace('?', '')}
+      value={page.url.search.replace('?', '')}
       placeholder="e.g. str=string&num=123&bool_array=true&bool_array=false&bool_array=true..."
       on:input={(x) =>
-        goto(`${url.pathname}?${x.currentTarget.value}`, {
+        goto(`${page.url.pathname}?${x.currentTarget.value}`, {
           replaceState: true,
           keepFocus: true,
           noScroll: true
@@ -31,7 +29,7 @@
           ['/page', 'Separated Schema'],
           ['/load', 'Use with +page.js'],
           ['/server', 'Use with +page.server.js']
-        ].map(([path, name]) => [path + $page.url.search, name])
+        ].map(([path, name]) => [path + page.url.search, name])
       )}
     />
   </ul>
