@@ -13,7 +13,7 @@
     <input
       value={page.url.search.replace('?', '')}
       placeholder="e.g. str=string&num=123&bool_array=true&bool_array=false&bool_array=true..."
-      on:input={(x) =>
+      oninput={(x) =>
         goto(`${page.url.pathname}?${x.currentTarget.value}`, {
           replaceState: true,
           keepFocus: true,

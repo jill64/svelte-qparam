@@ -37,8 +37,7 @@ Use the `define` function to set multiple parameter definitions at once.
   })
 
   // https://example.com/?str=value&num=123&bool=false
-  let { values, qparams } = $derived(extract(page.url))
-  let { str, num, bool } = $derived(qparams)
+  let { values, qparams: q } = $derived(extract(page.url))
 
   // {
   //   str: 'value',
@@ -48,9 +47,9 @@ Use the `define` function to set multiple parameter definitions at once.
   console.log(values)
 
   // output 'value'
-  console.log(str)
-  num = 456
-  bool = true
+  console.log(q.str)
+  q.num = 456
+  q.bool = true
 </script>
 ```
 
@@ -102,8 +101,7 @@ export const load = ({ url }) => {
 <script>
   let { data } = $props()
 
-  let { qparams } = $derived(data)
-  let { str, num, bool } = $derived(qparams)
+  let { qparams: q } = $derived(data)
 
   // ...
 </script>

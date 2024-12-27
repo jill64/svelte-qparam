@@ -11,14 +11,21 @@ export const code = /* html */ `
     bool_array: array(boolean)
   })
 
-  let {
-    qparams: { str, num, bool_array }
-  } = $derived(qparam(page.url))
+  let { qparams: q } = $derived(qparam(page.url))
 </script>
 
+<div>
+  <button
+    onclick={() => {
+      q.str = 'Hello, World!'
+    }}
+  >
+    Set str = Hello, World!
+  </button>
+</div>
 <output>
-  <code>str = {str}</code>
-  <code>num = {num}</code>
-  <code>bool_array = {JSON.stringify(bool_array)}</code>
+  <code>str = {q.str}</code>
+  <code>num = {q.num}</code>
+  <code>bool_array = {JSON.stringify(q.bool_array)}</code>
 </output>
 `

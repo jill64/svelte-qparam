@@ -6,14 +6,22 @@
   import extractSource from '../extract.ts?raw'
   import { code } from './code'
 
-  let { qparams } = $derived(extract(page.url))
-  let { str, num, bool_array } = $derived(qparams)
+  let { qparams: q } = $derived(extract(page.url))
 </script>
 
+<div>
+  <button
+    onclick={() => {
+      q.num = 123
+    }}
+  >
+    Set num = 123
+  </button>
+</div>
 <output>
-  <code>page_str = {str}</code>
-  <code>page_num = {num}</code>
-  <code>page_bool_array = {JSON.stringify(bool_array)}</code>
+  <code>page_str = {q.str}</code>
+  <code>page_num = {q.num}</code>
+  <code>page_bool_array = {JSON.stringify(q.bool_array)}</code>
 </output>
 
 <div style:overflow-x="auto">

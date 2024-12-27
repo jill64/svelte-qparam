@@ -3,13 +3,17 @@ export const code = /* html */ `
 <script>
   let { data } = $props()
 
-  let { qparams } = $derived(data)
-  let { str, num, bool_array } = $derived(qparams)
+  let { qparams: q } = data
 </script>
 
+<div>
+  <button onclick={() => {
+    q.bool_array = [true, false, true]
+  }}> Set bool_array = [true, false, true] </button>
+</div>
 <output>
-  <code>load_str = {str}</code>
-  <code>load_num = {num}</code>
-  <code>load_bool_array = {JSON.stringify(bool_array)}</code>
+  <code>load_str = {q.str}</code>
+  <code>load_num = {q.num}</code>
+  <code>load_bool_array = {JSON.stringify(q.bool_array)}</code>
 </output>
 `
