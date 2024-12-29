@@ -46,8 +46,8 @@ importers:
         specifier: 5.16.0
         version: 5.16.0
       svelte-page-tab:
-        specifier: 1.0.19
-        version: 1.0.19(@sveltejs/kit@2.15.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.0)(vite@6.0.6(@types/node@20.14.9)))(svelte@5.16.0)(vite@6.0.6(@types/node@20.14.9)))(svelte@5.16.0)
+        specifier: 2.0.4
+        version: 2.0.4(@sveltejs/kit@2.15.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.0)(vite@6.0.6(@types/node@20.14.9)))(svelte@5.16.0)(vite@6.0.6(@types/node@20.14.9)))(svelte@5.16.0)
       typescript:
         specifier: 5.7.2
         version: 5.7.2
@@ -1957,11 +1957,11 @@ packages:
       '@sveltejs/kit': ^2.0.0
       svelte: ^4.0.0
 
-  svelte-page-tab@1.0.19:
-    resolution: {integrity: sha512-GbcBzZUdOp13mdcZ0/OQ7hdVv880ZO8jy6Dh9B3LEohGwwKfaOsl/dX5t6dBr3OHVZ2SzSdLAkmMwXHDPr2Idw==}
+  svelte-page-tab@2.0.4:
+    resolution: {integrity: sha512-0homm25ak/m7Y5Q3pk0u0OAqx8ClUcwHkQylOva/295IaoKCOE7hHMRyT5kHeszO7eYDQnH9mPbdI11vWuh69A==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
-      svelte: ^4.0.0
+      svelte: ^5.0.0
 
   svelte-writable-derived@3.1.1:
     resolution: {integrity: sha512-w4LR6/bYZEuCs7SGr+M54oipk/UQKtiMadyOhW0PTwAtJ/Ai12QS77sLngEcfBx2q4H8ZBQucc9ktSA5sUGZWw==}
@@ -3962,7 +3962,7 @@ snapshots:
       '@sveltejs/kit': 2.15.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.0)(vite@6.0.6(@types/node@20.14.9)))(svelte@5.16.0)(vite@6.0.6(@types/node@20.14.9))
       svelte: 5.16.0
 
-  svelte-page-tab@1.0.19(@sveltejs/kit@2.15.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.0)(vite@6.0.6(@types/node@20.14.9)))(svelte@5.16.0)(vite@6.0.6(@types/node@20.14.9)))(svelte@5.16.0):
+  svelte-page-tab@2.0.4(@sveltejs/kit@2.15.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.0)(vite@6.0.6(@types/node@20.14.9)))(svelte@5.16.0)(vite@6.0.6(@types/node@20.14.9)))(svelte@5.16.0):
     dependencies:
       '@sveltejs/kit': 2.15.1(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.16.0)(vite@6.0.6(@types/node@20.14.9)))(svelte@5.16.0)(vite@6.0.6(@types/node@20.14.9))
       svelte: 5.16.0
