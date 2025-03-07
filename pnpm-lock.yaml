@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       typed-qparam:
-        specifier: 2.1.13
-        version: 2.1.13
+        specifier: 2.1.14
+        version: 2.1.14
     devDependencies:
       '@jill64/eslint-config-svelte':
         specifier: 2.0.6
@@ -1699,8 +1699,8 @@ packages:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
     engines: {node: '>= 0.8.0'}
 
-  typed-qparam@2.1.13:
-    resolution: {integrity: sha512-7zfCzCFsOQ+ghaAWm9ooxjv9gch0qjEXSUjrbaUE24kIHW8PogYlrHzEWWsfqRzhuCw6QkK5T9hLuzxh6XxvTg==}
+  typed-qparam@2.1.14:
+    resolution: {integrity: sha512-UpyiHvhOtyPv+Xh9KrQ31+ODrbRXIVnFHiULx/ZnWJufMWzO85dkji3YMlY7TTw9oga3E2/WnuHfzeq0BtMddg==}
 
   typescanner@0.5.3:
     resolution: {integrity: sha512-B7EGCU7UEvTlFUE/yciT8L1pkNRLhqCa4tatuOuC5cKRCbLelB24y/P9RLDtT1Qq5CyLPSf5h9yv7Ij5BMyWmA==}
@@ -3436,7 +3436,7 @@ snapshots:
     dependencies:
       prelude-ls: 1.2.1
 
-  typed-qparam@2.1.13:
+  typed-qparam@2.1.14:
     dependencies:
       ts-serde: 1.0.8
 
