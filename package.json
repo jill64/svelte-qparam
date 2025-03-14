@@ -34,7 +34,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/svelte-qparam.git",
-    "image": "https://opengraph.githubassets.com/cfd4874ed4accfe4f043bc8777b42377e1989defec79d246c25e98bae5524fa2/jill64/svelte-qparam"
+    "image": "https://opengraph.githubassets.com/939dc20e6cb5cf5b4914ab7c80d5cd139cd9b1bcf65d6dbc6d2046ef28660d6a/jill64/svelte-qparam"
   },
   "keywords": [
     "library",
@@ -45,14 +45,14 @@
   ],
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build && npm run package",
-    "preview": "npm run build && vite preview",
-    "prepack": "npm run build",
-    "package": "svelte-kit sync && npx @sveltejs/package && npx publint",
-    "check": "svelte-kit sync && npx svelte-check",
-    "lint": "npm run check && npx eslint .",
-    "format": "npx @jill64/psx",
-    "test": "vitest",
+    "build": "vite build && bun run package",
+    "preview": "bun run build && vite preview",
+    "prepack": "bun run build",
+    "package": "svelte-kit sync && bunx @sveltejs/package && bunx publint",
+    "check": "svelte-kit sync && bunx svelte-check",
+    "lint": "bun run check && bunx eslint .",
+    "format": "bunx psvx",
+    "test": "bun test **/*.test.ts",
     "test:e2e": "playwright test"
   },
   "peerDependencies": {
@@ -62,22 +62,21 @@
   "prettier": "@jill64/prettier-config",
   "devDependencies": {
     "@jill64/npm-demo-layout": "2.0.15",
-    "@jill64/universal-sanitizer": "1.4.1",
-    "@jill64/eslint-config-svelte": "2.0.6",
-    "@jill64/playwright-config": "2.4.2",
+    "@jill64/eslint-config-svelte": "2.2.1",
+    "@jill64/playwright-config": "3.0.0",
     "@jill64/prettier-config": "1.0.0",
     "@jill64/sentry-sveltekit-cloudflare": "2.0.6",
-    "@playwright/test": "1.49.1",
-    "@sveltejs/adapter-cloudflare": "5.0.2",
-    "@sveltejs/kit": "2.16.1",
-    "svelte": "5.19.7",
+    "@playwright/test": "1.51.0",
+    "@sveltejs/adapter-cloudflare": "5.0.3",
+    "@sveltejs/kit": "2.19.0",
+    "svelte": "5.23.0",
     "svelte-page-tab": "2.0.5",
-    "typescript": "5.7.3",
-    "vite": "6.0.11",
-    "vitest": "3.0.5",
+    "typescript": "5.8.2",
+    "vite": "6.2.1",
+    "@types/bun": "1.2.5",
     "@sveltejs/vite-plugin-svelte": "5.0.3"
   },
   "dependencies": {
-    "typed-qparam": "2.1.13"
+    "typed-qparam": "2.1.14"
   }
 }
