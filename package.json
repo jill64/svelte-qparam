@@ -34,7 +34,7 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jill64/svelte-qparam.git",
-    "image": "https://opengraph.githubassets.com/131ccce50b8210d2baa5a5b7eeedd44f0d767998b4273f802d7eaaaec8bdac8a/jill64/svelte-qparam"
+    "image": "https://opengraph.githubassets.com/3a565c7ae05c0d18b21bfb61942e3ae8ba0c3c95d0914625fe9069000802e0c6/jill64/svelte-qparam"
   },
   "keywords": [
     "library",
@@ -70,7 +70,7 @@
     "@sveltejs/adapter-cloudflare": "5.1.0",
     "@sveltejs/kit": "2.19.2",
     "svelte": "5.23.2",
-    "svelte-page-tab": "2.0.5",
+    "svelte-page-tab": "2.0.6",
     "typescript": "5.8.2",
     "vite": "6.2.3",
     "@types/bun": "1.2.6",
