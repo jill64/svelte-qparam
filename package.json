@@ -73,7 +73,7 @@
     "svelte-page-tab": "2.0.6",
     "typescript": "5.8.2",
     "vite": "6.2.3",
-    "@types/bun": "1.2.6",
+    "@types/bun": "1.2.7",
     "@sveltejs/vite-plugin-svelte": "5.0.3"
   },
   "dependencies": {
